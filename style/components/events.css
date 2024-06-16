@@ -1,0 +1,220 @@
+.events {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.events__title {
+  font-weight: 300;
+  font-size: var(--size-3xl);
+  margin-bottom: 1.5rem;
+}
+
+.events__btn-desktop {
+  display: none;
+}
+
+.events__wrapper {
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+.events__wrapper:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+.events__img {
+  position: relative;
+  width: 100%;
+}
+
+.events__sub-title {
+  font-weight: 300;
+  font-size: var(--size-2xl);
+  margin-top: 2rem;
+  color: var(--clr-white);
+  position: absolute;
+  top: 33%;
+  left: 5%;
+  line-height: 1.1;
+  max-width: 10ch;
+}
+
+.events__gen-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.events__btn {
+  display: inline-block;
+  padding: 0.4rem 2rem;
+  border: 1px solid var(--clr-black);
+  color: var(--clr-darkgray);
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.events__btn:hover {
+  color: var(--clr-black);
+  border-color: var(--clr-darkgray);
+}
+
+/*  */
+.events__gen-wrapper--desktop,
+.events__wrap--desktop {
+  display: none;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+  .events__gen-wrapper--desktop,
+  .events__wrap--desktop {
+    display: block;
+  }
+
+  .events__btn {
+    display: none;
+  }
+
+  .events__gen-wrapper,
+  .events__wrap {
+    display: none;
+  }
+
+  .events__wrap--desktop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .events__gen-wrapper--desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+    column-gap: 2rem;
+  }
+
+  .events__title--desktop {
+    font-weight: 300;
+    font-size: var(--size-4xl);
+  }
+
+  .events__btn-desktop {
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    border: 1px solid var(--clr-black);
+    color: var(--clr-darkgray);
+    transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .events__btn-desktop:hover {
+    color: var(--clr-black);
+    border-color: var(--clr-darkgray);
+  }
+
+  .events__img--desktop {
+    position: relative;
+  }
+
+  .events__sub-title--desktop {
+    position: absolute;
+    bottom: 5%;
+    color: var(--clr-white);
+    font-weight: 300;
+    font-size: var(--size-2xl);
+    max-width: 2ch;
+    left: 10%;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .events__gen-wrapper--desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3rem;
+    column-gap: 2rem;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .events__gen-wrapper--desktop,
+  .events__wrap--desktop {
+    display: block;
+  }
+
+  .events__gen-wrapper,
+  .events__wrap {
+    display: none;
+  }
+
+  .events__wrap--desktop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .events__gen-wrapper--desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 3rem;
+    column-gap: 2rem;
+  }
+
+  .events__title--desktop {
+    font-weight: 300;
+    font-size: var(--size-4xl);
+  }
+
+  .events__btn-desktop {
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    border: 1px solid var(--clr-black);
+    color: var(--clr-darkgray);
+    transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .events__btn-desktop:hover {
+    color: var(--clr-black);
+    border-color: var(--clr-darkgray);
+  }
+
+  .events__img--desktop {
+    position: relative;
+  }
+
+  .events__sub-title--desktop {
+    position: absolute;
+    bottom: 5%;
+    color: var(--clr-white);
+    font-weight: 300;
+    font-size: var(--size-2xl);
+    max-width: 2ch;
+    left: 10%;
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

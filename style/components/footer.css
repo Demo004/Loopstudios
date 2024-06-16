@@ -1,0 +1,124 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-black);
+  padding: 2rem;
+  gap: 2rem;
+  width: 100%;
+}
+
+.footer__menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.footer__list a {
+  display: inline;
+  position: relative;
+  color: var(--clr-white);
+}
+
+.footer__list a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  width: 0;
+  height: 2px;
+  background-color: var(--clr-white);
+  z-index: 3;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__list a:is(:hover, :focus):after {
+  width: 22px;
+  opacity: 1;
+}
+
+.footer__icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.footer__icons img {
+  cursor: pointer;
+  width: 20px;
+  height: auto;
+}
+
+.footer__icons-img::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  width: 0;
+  height: 2px;
+  background-color: var(--clr-white);
+  z-index: 999;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__icons-img:hover::after {
+  width: 22px;
+  opacity: 1;
+}
+
+.footer__copyright {
+  margin-top: 1rem;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .footer__menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.8rem;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .footer__wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

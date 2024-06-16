@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <!-- ###fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- hero + header -->
+    <main class="main__hero-header--background" id="about">
+      <div class="background__overlay">
+        <!-- header -->
+        <section class="header container">
+          <!-- logo -->
+          <img src="/logo.svg" alt="loopstudio" class="header__logo" />
+
+          <!-- input -->
+          <input type="checkbox" id="check" />
+
+          <!-- nav-items -->
+          <nav>
+            <ul class="header__menu">
+              <li class="header__links"><a href="#about">About</a></li>
+              <li class="header__links"><a href="#careers">Careers</a></li>
+              <li class="header__links"><a href="#events">Events</a></li>
+              <li class="header__links"><a href="#products">Products</a></li>
+              <li class="header__links"><a href="#support">Support</a></li>
+
+              <!-- label -->
+              <label for="check" class="close-menu"
+                ><img src="/icon-close.svg" alt="close-ham"
+              /></label>
+            </ul>
+
+            <!-- label -->
+            <label for="check" class="open-menu"
+              ><img src="./icon-hamburger.svg" alt="open-ham"
+            /></label>
+          </nav>
+        </section>
+
+        <!-- hero-header -->
+        <section class="hero container">
+          <h1 class="hero__title">
+            IMMERSIVE <br />
+            EXPERIENCES <br />
+            THAT DELIVER <br />
+          </h1>
+        </section>
+      </div>
+    </main>
+
+    <!-- careers -->
+    <section class="careers container gap" id="careers">
+      <img src="./desktop/image-interactive.jpg" alt="" class="careers__img" />
+      <div class="careers__content">
+        <h2 class="careers__title">THE LEADER IN INTERACTIVE VR</h2>
+        <p class="careers__desc">
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </div>
+    </section>
+
+    <!-- events -->
+    <section class="events container gap" id="products">
+      <!-- events wrap -->
+      <div class="events__wrap">
+        <h2 class="events__title">OUR CREATIONS</h2>
+        <button class="events__btn-desktop">SEE ALL</button>
+      </div>
+
+      <!-- general-wrapper for mobile -->
+      <div class="events__gen-wrapper">
+        <div class="events__wrapper">
+          <img
+            src="/mobile/image-deep-earth.jpg"
+            alt="image-deep-earth"
+            class="events__img"
+          />
+          <h4 class="events__sub-title">DEEP EARTH</h4>
+        </div>
+
+        <div class="events__wrapper">
+          <img
+            src="/mobile/image-night-arcade.jpg"
+            alt="image-deep-earth"
+            class="events__img"
+          />
+          <h4 class="events__sub-title">NIGHT ARCADE</h4>
+        </div>
+        <div class="events__wrapper">
+          <img
+            src="/mobile/image-soccer-team.jpg"
+            alt="image-deep-earth"
+            class="events__img"
+          />
+          <h4 class="events__sub-title">SOCCER TEAM VR</h4>
+        </div>
+
+        <div class="events__wrapper">
+          <img
+            src="/mobile/image-grid.jpg"
+            alt="image-deep-earth"
+            class="events__img"
+          />
+          <h4 class="events__sub-title">THE GRID</h4>
+        </div>
+
+        <div class="events__wrapper">
+          <img
+            src="/mobile/image-from-above.jpg"
+            alt="image-deep-earth"
+            class="events__img"
+          />
+          <h4 class="events__sub-title">FROM UP ABOVE VR</h4>
+        </div>
+
+        <div class="events__wrapper">
+          <img
+            src="/mobile/image-pocket-borealis.jpg"
+            alt="image-deep-earth"
+            class="events__img"
+          />
+          <h4 class="events__sub-title">POCKET BOREALIS</h4>
+        </div>
+
+        <div class="events__wrapper">
+          <img
+            src="/mobile/image-curiosity.jpg"
+            alt="image-deep-earth"
+            class="events__img"
+          />
+          <h4 class="events__sub-title">THE CURIOSITY</h4>
+        </div>
+
+        <div class="events__wrapper">
+          <img
+            src="/mobile/image-fisheye.jpg"
+            alt="image-deep-earth"
+            class="events__img"
+          />
+          <h4 class="events__sub-title">MAKE IT FISHEYE</h4>
+        </div>
+
+        <button class="events__btn">SEE ALL</button>
+      </div>
+
+      <!-- d -->
+      <!-- e -->
+      <!-- s -->
+      <!-- s -->
+      <!-- k -->
+      <!-- t -->
+      <!-- o -->
+      <!-- p -->
+
+      <!-- events wrap -->
+      <div class="events__wrap--desktop">
+        <h2 class="events__title--desktop">OUR CREATIONS</h2>
+        <button class="events__btn-desktop">SEE ALL</button>
+      </div>
+
+      <!-- general-wrapper for desktop -->
+      <div class="events__gen-wrapper--desktop">
+        <div class="events__wrapper">
+          <img
+            src="/desktop/image-deep-earth.jpg"
+            alt="image-deep-earth"
+            class="events__img--desktop"
+          />
+          <h4 class="events__sub-title--desktop">DEEP EARTH</h4>
+        </div>
+
+        <div class="events__wrapper">
+          <img
+            src="/desktop/image-night-arcade.jpg"
+            alt="image-deep-earth--desktop"
+            class="events__img--desktop"
+          />
+          <h4 class="events__sub-title--desktop">NIGHT ARCADE</h4>
+        </div>
+        <div class="events__wrapper">
+          <img
+            src="/desktop/image-soccer-team.jpg"
+            alt="image-deep-earth--desktop"
+            class="events__img--desktop"
+          />
+          <h4 class="events__sub-title--desktop">SOCCER TEAM VR</h4>
+        </div>
+
+        <div class="events__wrapper">
+          <img
+            src="/desktop/image-grid.jpg"
+            alt="image-deep-earth"
+            class="events__img--desktop"
+          />
+          <h4 class="events__sub-title--desktop">THE GRID</h4>
+        </div>
+
+        <div class="events__wrapper">
+          <img
+            src="/desktop/image-from-above.jpg"
+            alt="image-deep-earth"
+            class="events__img--desktop"
+          />
+          <h4 class="events__sub-title--desktop">FROM UP ABOVE VR</h4>
+        </div>
+
+        <div class="events__wrapper">
+          <img
+            src="/desktop/image-pocket-borealis.jpg"
+            alt="image-deep-earth"
+            class="events__img--desktop"
+          />
+          <h4 class="events__sub-title--desktop">POCKET BOREALIS</h4>
+        </div>
+
+        <div class="events__wrapper">
+          <img
+            src="/desktop/image-curiosity.jpg"
+            alt="image-deep-earth"
+            class="events__img--desktop"
+          />
+          <h4 class="events__sub-title--desktop">THE CURIOSITY</h4>
+        </div>
+
+        <div class="events__wrapper">
+          <img
+            src="/desktop/image-fisheye.jpg"
+            alt="image-deep-earth"
+            class="events__img--desktop"
+          />
+          <h4 class="events__sub-title--desktop">MAKE IT FISHEYE</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer gap" id="support">
+      <div class="footer__wrapper1">
+        <img src="/logo.svg" alt="loopstudios" class="footer__img" />
+        <nav>
+          <ul class="footer__menu">
+            <li class="footer__list"><a href="#about">About</a></li>
+            <li class="footer__list"><a href="#careers">Careers</a></li>
+            <li class="footer__list"><a href="#events">Events</a></li>
+            <li class="footer__list"><a href="#products">Products</a></li>
+            <li class="footer__list"><a href="#support">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__wrapper2">
+        <div class="footer__icons">
+          <img
+            src="/icon-facebook.svg"
+            alt="facebook"
+            class="footer__icons-img"
+          />
+          <img
+            src="/icon-twitter.svg"
+            alt="twitter"
+            class="footer__icons-img"
+          />
+          <img
+            src="/icon-pinterest.svg"
+            alt="pinterest"
+            class="footer__icons-img"
+          />
+          <img
+            src="/icon-instagram.svg"
+            alt="instagram"
+            class="footer__icons-img"
+          />
+        </div>
+
+        <p class="footer__copyright">
+          © 2024 Loopstudios. All rights reserved.
+        </p>
+      </div>
+    </section>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
